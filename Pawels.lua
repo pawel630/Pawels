@@ -1351,7 +1351,7 @@ if game.PlaceId == 455366377 or game.PlaceId == 4669040 then
 				if workspace:FindFirstChild(TextBox.Text.. "Spray") then
 					TextLabel.Text = "[DECAL] ".. workspace[TextBox.Text.. "Spray"].Decal.texture:match"%d+"
 				end
-				--//Blink
+			--//Blink
 			elseif i.KeyCode == Enum.KeyCode[Keys["pawelBlink"]] then
 				if ONblink and not ONlegit then
 					repeat
@@ -1362,7 +1362,7 @@ if game.PlaceId == 455366377 or game.PlaceId == 4669040 then
 						heart:wait()
 					until not uis:IsKeyDown"LeftShift"
 				end
-				--//Aimbot
+			--//Aimbot
 			elseif i.KeyCode == Enum.KeyCode[Keys["pawelAimbot"]] and not uis:IsKeyDown"LeftControl" then
 				if Mouse.Target ~= nil then
 					local aimplr
@@ -1392,14 +1392,14 @@ if game.PlaceId == 455366377 or game.PlaceId == 4669040 then
 						end
 					end
 				end
-				--//Fast Drag
+			--//Fast Drag
 			elseif i.KeyCode == Enum.KeyCode[Keys["pawelFastDrag"]] then
 				if plr.Backpack:FindFirstChild"ServerTraits" then
 					plr.Backpack.ServerTraits.Drag:FireServer(true)
 				else
 					plr.Backpack.Input:FireServer("drag")
 				end
-				--//Stomp Spam / Drag
+			--//Stomp Spam / Drag
 			elseif i.KeyCode == Enum.KeyCode.E then
 				EHold = true
 
@@ -1446,26 +1446,26 @@ if game.PlaceId == 455366377 or game.PlaceId == 4669040 then
 						end
 					end
 				end
-				--//Airwalk
+			--//Airwalk
 			elseif i.KeyCode == Enum.KeyCode[Keys["pawelAirwalk"]] then
 				if ONairwalk and not ONfly and not ONlegit then
 					ONplatform = not ONplatform
 					platform()
 				end
-				--//Noclip
+			--//Noclip
 			elseif i.KeyCode == Enum.KeyCode[Keys["pawelNoclip"]] then
 				Noclip()
-				--//Fly
+			--//Fly
 			elseif i.KeyCode == Enum.KeyCode[Keys["pawelFly"]] then
 				if ONfly then
 					ONfly = false
 				elseif not ONlegit then
 					Fly()
 				end
-				--//Camo Gui
+			--//Camo Gui
 			elseif i.KeyCode == Enum.KeyCode[Keys["pawelCamos"]] and not uis:IsKeyDown"LeftControl" then
 				Frame2.Visible = not Frame2.Visible
-				--//Part Hider
+			--//Part Hider
 			elseif i.KeyCode == Enum.KeyCode[Keys["pawelHiderDelete"]] and uis:IsKeyDown"LeftControl" and Mouse.Target ~= nil then
 				table.insert(Parts, {Mouse.Target, Mouse.Target.Parent})
 				Mouse.Target.Parent = rep
@@ -1481,7 +1481,7 @@ if game.PlaceId == 455366377 or game.PlaceId == 4669040 then
 				for i = 1, #Parts do
 					Parts[i][1].Parent = Parts[i][2]
 				end
-				--//Night Vision
+			--//Night Vision
 			elseif i.KeyCode == Enum.KeyCode[Keys["pawelNightVision"]] then
 				state = not state
 				if state then
@@ -1496,7 +1496,7 @@ if game.PlaceId == 455366377 or game.PlaceId == 4669040 then
 						workspace.CurrentCamera.RegularVision:Destroy()
 					end
 				end
-				--//Annoying Guis
+			--//Annoying Guis
 			elseif i.KeyCode == Enum.KeyCode[Keys["pawelGuis"]] then
 				ONguis = not ONguis
 				plr.PlayerGui.HUD.ImageButton.Visible = not ONguis
