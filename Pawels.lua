@@ -7,7 +7,7 @@
 | |                                      /_/
 |_|
 
-pawel630#0001 | 902665181816033290
+pawel630#1961 | 902665181816033290
 ]]
 --//Instances
 local start = tick()
@@ -2715,8 +2715,6 @@ if game.PlaceId == 455366377 or game.PlaceId == 4669040 then
 	pawel630 | 120476167
 	
 	pawel63O | 1586447079
-	
-	daftpawel | 1599260675
 	
 	Skept_ic | 86628814
 	
